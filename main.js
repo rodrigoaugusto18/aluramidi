@@ -3,8 +3,10 @@ function tocaSom (seletorAudio) {
 
     if (elemento === null) {
         console.log('Elemento não existe!');
+        
     }if (elemento && elemento.localName === 'audio') {
-        elemento.play;   
+        elemento.play();   
+        console.log(elemento)
     }else {
         console.log('Elemento não encontrado ou seletor inválido');
     }
@@ -33,9 +35,10 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
         }
     }
     
-
     tecla.onkeyup = function () {
         tecla.classList.remove('ativa');
     }
 
+
 }
+
